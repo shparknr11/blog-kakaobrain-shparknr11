@@ -53,13 +53,29 @@
   color: #1f24ff;
 }
 
-.navi-list li a img {
+.navi-search a {
+  display: block;
   width: 24px;
   height: 24px;
+  background: url("../images/icon/icon-search.png") no-repeat center;
+  background-size: contain;
+}
+
+.navi-search a:hover {
+  background: url("../images/icon/icon-search-hover.png") no-repeat center;
+  background-size: contain;
 }
 
 .mobile-menu {
   display: none;
+}
+
+.mobile-menu a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../images/icon/icon-hbr.png") no-repeat center;
+  background-size: contain;
 }
 
 /* 반응형 */
@@ -68,12 +84,13 @@
     gap: 15px;
   }
 
-  .header-navi li {
+  .navi-list li {
     display: none;
   }
 
   .mobile-menu,
   .navi-search {
+    /* display: none; 의 반대는 display: block; */
     display: block !important;
   }
 }
