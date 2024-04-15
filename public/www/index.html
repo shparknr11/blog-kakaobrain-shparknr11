@@ -13,6 +13,19 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <!-- Swiper -->
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 외부 js 파일 방식으로 진행 -->
+    <script src="./js/logo.js"></script>
+    <!-- <head>부분에 있다면 script문서를 불러와 swlogo 찾으라고 하는데
+  이당시에는 타이핑 순서상 body부분이 없기때문에 swlogo를 찾을 수 없다. 
+    window load 기능을 사용해야 위로 끌어올 수 있음 -->
   </head>
   <body>
     <!-- 전체 레이아웃 -->
@@ -30,7 +43,37 @@
               />
               <!-- start 로고 슬라이드 -->
               <div class="header-logo-slide" id="logo-slide">
-                <img src="./images/etc/logo-blog01.png" alt="블로그" />
+                <div class="swiper swlogo">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog01.png" alt="블로그" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog02.png" alt="블로그" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog03.png" alt="블로그" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog04.png" alt="블로그" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog05.png" alt="블로그" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog06.png" alt="블로그" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog07.png" alt="블로그" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog08.png" alt="블로그" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/etc/logo-blog09.png" alt="블로그" />
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- end 로고 슬라이드 -->
             </a>
