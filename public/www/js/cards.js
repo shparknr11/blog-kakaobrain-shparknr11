@@ -5,6 +5,7 @@ window.addEventListener("load", function () {
   // 슬라이드 만드는 함수
   function makeCardSlide() {
     const wWidth = window.innerWidth;
+
     if (wWidth > 1024) {
       // swiper 를 제거
       if (cardSlide !== null) {
