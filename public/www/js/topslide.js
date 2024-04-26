@@ -36,7 +36,7 @@ window.addEventListener("load", function () {
       whereTag.innerHTML = slideTags;
       // 3. html 완성후 swiper를 생성한다.
       // Swiper 기본코드를 넣어보자. *위치 중요
-      var topSlide = new Swiper(".topslide", {
+      const topSlide = new Swiper(".topslide", {
         loop: true, // 이미지 무한반복
         speed: 800,
         autoplay: {
@@ -47,6 +47,18 @@ window.addEventListener("load", function () {
           el: ".swiper-pagination",
           clickable: true,
         },
+      });
+
+      // 4. 마우스 오버시 슬라이드를 일시 멈춤 및 재실행
+      // 페이지네이션도 마우스 오버에 포함해야 하므로 .topslide로 지정
+      const slideArea = document.querySelector(".topslide");
+      slideArea.addEventListener("mouseenter", function () {
+        // console.log("마우스 올렸어요.");
+        topSlide.autoplay.stop();
+      });
+      slideArea.addEventListener("mouseleave", function () {
+        // console.log("마우스 빠졋어요.");
+        topSlide.autoplay.start();
       });
     })
     .catch((error) => {});
