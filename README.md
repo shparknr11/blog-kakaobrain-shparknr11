@@ -152,4 +152,61 @@ root.render(
             : npm start 개발시 포함
             : npm build 배포시 포함
 
-# React 기초 2.
+# React Component
+
+0. const용 변수 만든다.
+1. 리액트 컴포넌트의 변수 명은 무조건 대문자!!
+2. 변수에는 반드시 함수가 할당되어야한다.
+3. 리턴값이 꼭 있어야한다. / return (html)
+   - 리턴 소괄호안에 html 적기! .
+
+```js
+const Header = function () {
+  return ()
+}
+
+const Header = () => {
+  return ()
+}
+```
+
+```js
+const Header = function () {
+  return <header>상단</header>;
+};
+
+const Header = () => {
+  return <header>상단</header>;
+};
+```
+
+```js
+import ReactDOM from "react-dom/client";
+const root = ReactDOM.createRoot(document.getElementById("root"));
+// 상단에 출력할 JSX
+const Header = function () {
+  return <header>상단</header>;
+};
+// 메인에 출력할 JSX
+const Main = () => {
+  return <main>메인</main>;
+};
+// 하단에 출력할 JSX
+const Footer = () => {
+  return <footer>하단</footer>;
+};
+
+root.render(
+  <div className="wrap">
+    <Header></Header>
+    <Main></Main>
+    <Footer></Footer>
+  </div>
+);
+```
+
+## React Component 2
+
+- 관리, 협업을 위해
+- 각각 컴포넌트를 파일로 뽑아보자.
+- 컴포넌트 파일명은 대문자로!!
