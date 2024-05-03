@@ -1,0 +1,134 @@
+.footer {
+}
+.footer .inner {
+  /* header.css의 .inner 에서 display flex, space-between, height가 적용되어있음 */
+  /* heigt auto로 높이(자동) 재설정 */
+  height: auto;
+}
+.footer-top {
+  padding: 30px 0;
+  background: #1e1e1e;
+}
+.footer-top-info {
+}
+.footer-logo {
+  width: 121px;
+  height: 20px;
+  display: block;
+  margin-bottom: 30px;
+}
+.footer-logo img {
+  width: 100%;
+  /* height: auto는 default값 
+  자체적으로 너비의 변화에따라 높이도 변하는게 default  */
+  height: auto;
+}
+
+.footer-top-info-desc {
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #999999;
+}
+.bt-orange {
+  display: inline-block;
+  border: 1px solid #fec62c !important;
+  background: #fec62c !important;
+  color: #1e1e1e !important;
+}
+.footer-top-sitemap {
+  display: flex;
+  gap: 80px;
+}
+.footer-top-sitemap dl {
+  width: 50%;
+}
+.footer-top-sitemap dl dt {
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.footer-top-sitemap dl dd {
+  /* 아래 a태그는 inline 요소라서 여기에 마진값 적용 */
+  margin-bottom: 30px;
+}
+.footer-top-sitemap dl dd a {
+  /* 아래 hover를 적용사항 :
+  display: inline-block 사용해야함*/
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+  /* 글자 줄내림 하지마. 속성 */
+  white-space: nowrap;
+}
+.footer-top-sitemap dl dd a:hover {
+  /* block이라서 공백영역에 마우스를 두어도 영역으로 인식하고 언더라인이 그어진다 
+    따라서 display: inline-block 사용해야함*/
+  text-decoration: underline;
+}
+.rot-45 {
+  /* 45도 회전 */
+  transform: rotate(45deg);
+  /* font-weight: 900; */
+}
+
+/* 반응형 */
+@media all and (max-width: 1024px) {
+  .footer .inner {
+    flex-wrap: wrap;
+  }
+  .footer-top-info {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  /* 여기 !! width 없애보고 물어보기 */
+  .footer-top-sitemap {
+    width: 100%;
+  }
+}
+
+.footer-bottom {
+  padding: 30px 0;
+  background: #191919;
+}
+
+.footer-bottom-copyright {
+}
+
+.copy {
+  font-size: 14px;
+  color: #666666;
+}
+
+.footer-bottom-sns {
+}
+
+.sns-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.sns-list li {
+}
+.sns-list li a {
+  font-size: 24px;
+  color: #807f80;
+}
+.sns-list li a:hover {
+  color: #ccc;
+}
+
+/* 반응형 */
+@media all and (max-width: 1024px) {
+  /* 반응형.footer .inner 에 flexwarp 줘서 적용되어있음 */
+  .footer-bottom-copyright {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer-bottom-sns {
+    width: 100%;
+  }
+}

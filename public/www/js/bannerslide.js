@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
       const whereTag = document.querySelector(".bannerslide .swiper-wrapper");
       whereTag.innerHTML = tagS;
       // 슬라이드 작동
-      const bannerSllide = new Swiper(".bannerslide", {
+      const bannerSlide = new Swiper(".bannerslide", {
         loop: true, // 이미지 무한반복
         pagination: {
           el: ".swiper-pagination",

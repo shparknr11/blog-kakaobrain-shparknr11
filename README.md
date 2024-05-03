@@ -197,7 +197,7 @@ const Footer = () => {
 };
 
 root.render(
-  <div className="wrap">
+  <div class="wrap">
     <Header></Header>
     <Main></Main>
     <Footer></Footer>
@@ -210,3 +210,6 @@ root.render(
 - 관리, 협업을 위해
 - 각각 컴포넌트를 파일로 뽑아보자.
 - 컴포넌트 파일명은 대문자로!!
+
+- pages 폴더 : 화면을 보여주는 것들
+- components 폴더 : page를 구성하는 요소들
